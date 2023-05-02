@@ -1,13 +1,21 @@
 {
+  "extends": ["react-app"],
   "env": {
-    "browser": true,
+    "mocha": true,
+    "es6": true,
     "commonjs": true,
-    "es2021": true
+    "browser": true
   },
-  "extends": "airbnb-base",
-  "overrides": [],
   "parserOptions": {
-    "ecmaVersion": "latest"
+    "ecmaVersion": 2020
   },
-  "rules": {}
+  "plugins": ["prettier"],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  }
 }
