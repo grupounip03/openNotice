@@ -1,35 +1,26 @@
 {
-  "name": "opennotice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/grupounip03/openNotice.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/grupounip03/openNotice/issues"
-  },
-  "homepage": "https://github.com/grupounip03/openNotice#readme",
-  "devDependencies": {
-    "eslint": "^8.39.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "prettier": "2.8.8"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.0-alpha3",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "firebase": "^8.9.0",
-    "fireray": "^2.4.8",
-    "jquery": "^3.6.4",
-    "sendmail": "^1.6.1"
-  }
+   "name": "ye",
+   "version": "1.0.0",
+   "description": "",
+   "main": "app.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon app.js"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "firebase": "^8.9.0",
+      "fireray": "^2.4.8",
+      "nodemailer": "^6.9.1"
+   },
+   "devDependencies": {
+      "eslint": "^8.39.0",
+      "eslint-config-airbnb-base": "^15.0.0",
+      "eslint-plugin-import": "^2.27.5",
+      "prettier": "2.8.8"
+   }
 }

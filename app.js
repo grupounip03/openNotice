@@ -1,16 +1,15 @@
+const port = parseInt(process.env.PORT) || 8000
 const express = require("express")
 const firebase = require('firebase')
 const fireray = require('fireray');
-const path = require("path")
 const app = express()
-require('dotenv').config() 
 
 const expressEncorder = express.urlencoded({
   extended: true
 })
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDo3tlYQyu4JOI7NISCxQqWa70mVnsfgUc',
+  apiKey: process.env.API_KEY,
   authDomain: "open-notice.firebaseapp.com",
   projectId: "open-notice",
   storageBucket: "open-notice.appspot.com",
@@ -24,14 +23,8 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 fireray.singleUse('firebase')
 
+app.use('/public', express.static('./src/assets'))
 app.use('/', express.json())
-
-app.use(
-  "/css",
-  express.static(path.join(__dirname, "node_modules/bootstrap/dist/css"))
-)
-
-app.use('/public', express.static('./public'))
 
 app.post('/create_post', expressEncorder, (req, res) => {
   const resEmail = req.body.email
@@ -40,34 +33,35 @@ app.post('/create_post', expressEncorder, (req, res) => {
   if (resEmail == '') {
     return res.status(400)
   }
+
   fireray.use('get', (module) => {
     module(db, 'postagens').then((response) => {
-      require('./sendEmail.js')(response == undefined?[{email: 'pornhub@gmail.com'}]:response, resEmail, resName)
+      const emailsUndefined = response == undefined?[{email: 'nãouseesseeemail@gmail.com'}]:response
+      const emails_ = emailsUndefined.map(obj => obj.email);
+      if (emails_.includes(resEmail)) return res.json({status: 'error'})
+      require('./src/api/sendEmailBackend')(emailsUndefined, resEmail, resName)
       fireray.use('push', (module) => {
         module(db, 'postagens', req.body)
+        res.json({status: 'success'})
       })
     })
   })
 })
 
-app.use(
-  "/js",
-  express.static(path.join(__dirname, "node_modules/bootstrap/dist/js"))
-)
-app.use("/js", express.static(path.join(__dirname, "node_modules/jquery/dist")))
-
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "/src/views/index.html"))
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/src/pages/index.html')
 })
 
-app.get('/posts', (req, res) => {
+app.get('/api/posts', (req, res) => {
   fireray.use('get', (module) => {
-    module(db, 'postagens').then((response) => {
-      res.send(response)
+   module(db, 'postagens').then((response) => {
+      const obj = {}
+      obj.tot_members = response == undefined ? 0 : response.length
+      res.json(obj)
     })
   })
 })
 
-app.listen(8001, () => {
-  console.log("Listening on port " + 8001)
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
 })

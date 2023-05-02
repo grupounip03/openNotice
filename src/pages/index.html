@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      
+      <link
+         rel="stylesheet"
+         href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
+         type="text/css"
+      />
+
+      <link rel="stylesheet" href="./public/styles/navBar.css" />
+      <link rel="stylesheet" href="./public/styles/lastPost.css" />
+      <link rel="stylesheet" href="./public/styles/homepage.css" />
+      <link rel="stylesheet" href="./public/styles/footer.css" />
+      <link rel="stylesheet" href="./public/styles/article.css" />
+      <link rel="stylesheet" href="./public/styles/global.css" />
+
+   </head>
+   <body>
+      <nav>
+         <div class="newsletter-wrapper">
+            <div><h2>Receba noticias em tempo real em seu email:</h2></div>
+            <div><p>Insira um email valído!!</p></div>
+            <div>
+               <input type="text" id="checkbox-newsletter">
+               <button from="checkbox-newsletter" class="btn-login-newsletter">Se cadastre</button>
+            </div>
+            
+         </div>
+         
+         <div class="login-pop-up special">
+            <div class="special">
+               <div class="special">
+                  <h1 class="special">Newsletter</h1>
+                  <p class="special">Assine nossa Newsletter e receba em primeira mão conteúdos exclusivos</p>
+                  
+                  <p class="special">Junte-se à nossa turma de <span class="special backend-members"></span> leitores ativos:</p>
+                  <span class="special mail-icon"><ion-icon name="mail"></ion-icon></span>
+                  <input class="special" type="email" placeholder="Email" name="email" id="" />
+                  <button class="special submit" type="submit">Inscrever-se (Grátis)</button>
+                  
+               </div>
+            </div>
+         </div>
+      
+         <script>
+            
+         </script>
+
+         <div class="nav-wrapper">
+            <div class="logo-menu">
+               <div>
+                  <button class="hamburguer-menu">
+                     <svg
+                        width="35"
+                        height="35"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="butt"
+                        stroke-linejoin="arcs"
+                     >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                     </svg>
+                     <span>MENU</span>
+                  </button>
+               </div>
+               <div class="logo">
+                  <a href="#home" id="logo">
+                     <p>Open Notice</p>
+                  </a>
+               </div>
+               
+               <div class="switch-search">
+                  <button class="search-icon"><ion-icon name="search"></ion-icon></button>
+                  <input class="input" type="text" placeholder="Buscar" required>
+               </div>
+         </div>
+      </nav>
+      <div class="navbar">
+         <ul>
+            <li onclick="close()">
+               <a onclick="close()" href="#last-post"> Ùltimas notícias </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="#global-economy"> Economia Global </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="#health"> Saúde </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="#sports"> Esportes </a>
+            </li>
+
+            <li onclick="close()">
+               <a onclick="close()" href="#private-equity"> Invetimentos </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href=""> Newsletter </a>
+            </li>
+         </ul>
+      </div>
+      
+      <section id="home">
+         <div class="main-top-container">
+            <div class="left-main-top-container">
+               <a href="">
+                  <img src="./public/images/noticia-secundaria-3.jpeg" alt="">
+               </a>
+               <a href="">
+                  <img src="./public/images/noticia-secundaria-3.jpeg" alt="">
+               </a>
+               <a href="">
+                  <img src="./public/images/noticia-secundaria-3.jpeg" alt="">
+               </a>
+            </div>
+            <div class="right-main-top-container">
+               <a href="">
+                  <img src="./public/images/noticia-secundaria-3.jpeg" alt="">
+               </a>
+            </div>
+         </div>
+         <div class="main-bottom-container">
+            <div class="ad-container">
+
+            </div>
+         </div>
+      </section>
+      
+
+
+
+      <article id="main-article">
+         <div class="gap-container">
+
+            <section>
+               <h1>Ùltimos</h1><span>posts</span>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+            </section>
+
+            <section>
+               <h1>Economia</h1><span>global</span>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+            </section>
+
+            <section>
+               <h1>Saúde</h1>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+            </section>
+
+            <section>
+               <h1>Esportes</h1>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+            </section>
+
+            <section>
+               <h1>Económia</h1><span>global</span>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+               <img src="" alt="">
+               <h2>Titúlo da notícia</h2>
+            </section>
+
+            <aside>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+            </aside>
+         </div>
+      </article>
+
+
+
+      <footer>
+         <div class="footer-wrapper">
+            <div class="footer-logo">
+               <p class="footer-logo-content">Open Notice</p>
+            </div>
+            <div class="top-footer-content">
+               <div class="about-us">
+                  <p>Sobre nós</p>
+                  <p>Lorem</p>
+                  <p>ipsum</p>
+                  <p>at</p>
+                  <p>dolor</p>
+                  <p>sit</p>
+                  
+               </div>
+               <div class="legality-notice">
+                  <p>Aviso legal e politica</p>
+                  <p>Lorem</p>
+                  <p>ipsum</p>
+                  <p>at</p>
+                  <p>dolor</p>
+                  <p>sit</p>
+                  
+               </div>
+               <div class="terms-of-use">
+                  <p>Termos de uso</p>
+                  <p>Lorem</p>
+                  <p>ipsum</p>
+                  <p>at</p>
+                  <p>dolor</p>
+                  <p>sit</p>
+                  
+               </div>
+               <div class="enter-group">
+                  <p>Faça parte da equipe</p>
+                  <p>Lorem</p>
+                  <p>ipsum</p>
+                  <p>at</p>
+                  <p>dolor</p>
+                  <p>sit</p>
+                  
+               </div>
+            </div>
+            <div class="bottom-footer-content">
+               <div class="footer-logo">"LOGO" &copy; 2023 Todos os direitos reservados</div>
+                  <div class="buttons-container">
+                  <a>
+                     Reportar erro
+                  </a>
+                  <a>
+                     Anuncie conosco
+                  </a>
+                  </div>
+            </div>
+         </div>
+      </footer>
+
+
+
+
+      <script src="./public/scripts/handlerMenu.js"></script>
+      <script src="./public/scripts/newsletterPop.js"></script>
+      <script src="./public/scripts/countMembers.js"></script>
+      <script src="./public/scripts/sendEmail.js"></script>
+   </body>
+</html>

@@ -1,0 +1,12 @@
+#main-article {
+   width: 100vw;
+   height: fit-content;
+   position: relative;
+   flex-direction: row;
+}
+
+div.gap-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+}
