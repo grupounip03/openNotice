@@ -23,35 +23,6 @@
    </head>
    <body>
       <nav>
-         <div class="newsletter-wrapper">
-            <div><h2>Receba noticias em tempo real em seu email:</h2></div>
-            <div><p>Insira um email válido!</p></div>
-            <div>
-               <input type="text" id="checkbox-newsletter">
-               <button from="checkbox-newsletter" class="btn-login-newsletter">Cadastre-se</button>
-            </div>
-            
-         </div>
-         
-         <div class="login-pop-up special">
-            <div class="special">
-               <div class="special">
-                  <h1 class="special">Newsletter</h1>
-                  <p class="special">Assine nossa Newsletter e receba em primeira mão conteúdos exclusivos</p>
-                  
-                  <p class="special">Junte-se à nossa turma de <span class="special backend-members"></span> leitores ativos:</p>
-                  <span class="special mail-icon"><ion-icon name="mail"></ion-icon></span>
-                  <input class="special" type="email" placeholder="Email" name="email" id="" />
-                  <button class="special submit" type="submit">Inscrever-se (Grátis)</button>
-                  
-               </div>
-            </div>
-         </div>
-      
-         <script>
-            
-         </script>
-
          <div class="nav-wrapper">
             <div class="logo-menu">
                <div>
@@ -85,6 +56,7 @@
                </div>
          </div>
       </nav>
+      
       <div class="navbar">
          <ul>
             <li onclick="close()">
@@ -110,14 +82,12 @@
       </div>
       
       <section id="home">
-         <div class="main-top-container">
-
-            <div class="right-main-top-container">
-               <a href="">
-                  <img src="../images/pacheco.jpeg" >
-               </a>
-            </div>
+         <div class="right-main-top-container">
+            <a href="">
+               <img src="../images/pacheco.jpeg" >
+            </a>
          </div>
+         
          <div class="main-bottom-container">
             <div class="ad-container">
                ad-container
@@ -214,7 +184,16 @@
                      ad container
                   </div>
                   <div class="newsletter-container">
-                     newsletter 
+                     <div class="newsletter-content">
+                        <h2>Newsletter</h2>
+                        <p>
+                           Assine nossa newsletter e receba em <br>
+                           primeira mão conteúdos exclusivos 
+                        </p>
+                       
+                        <input type="email" placeholder="Email" name="email" id="input-email" />
+                        <button class="submit" type="submit">Inscrever-se (Grátis)</button>
+                     </div>
                   </div>
                   <div class="ebook-container">
                      ebook
@@ -227,65 +206,62 @@
          </div>
       </article>
 
-      <footer>
-         <div class="footer-wrapper">
-            <div class="footer-logo">
-               <img src="../images/logo.png" class="footer-logo-content"></img>
+      <footer class="footer-wrapper">
+         
+         <div class="footer-logo">
+            <img src="../images/logo.png" class="footer-logo-content"></img>
+         </div>
+         <div class="top-footer-content">
+            <div class="about-us">
+               <p>Sobre nós</p>
+               <p>Lorem</p>
+               <p>ipsum</p>
+               <p>at</p>
+               <p>dolor</p>
+               <p>sit</p>
+               
             </div>
-            <div class="top-footer-content">
-               <div class="about-us">
-                  <p>Sobre nós</p>
-                  <p>Lorem</p>
-                  <p>ipsum</p>
-                  <p>at</p>
-                  <p>dolor</p>
-                  <p>sit</p>
-                  
-               </div>
-               <div class="legality-notice">
-                  <p>Aviso legal e politica</p>
-                  <p>Lorem</p>
-                  <p>ipsum</p>
-                  <p>at</p>
-                  <p>dolor</p>
-                  <p>sit</p>
-                  
-               </div>
-               <div class="terms-of-use">
-                  <p>Termos de uso</p>
-                  <p>Lorem</p>
-                  <p>ipsum</p>
-                  <p>at</p>
-                  <p>dolor</p>
-                  <p>sit</p>
-                  
-               </div>
-               <div class="enter-group">
-                  <p>Faça parte da equipe</p>
-                  <p>Lorem</p>
-                  <p>ipsum</p>
-                  <p>at</p>
-                  <p>dolor</p>
-                  <p>sit</p>
-                  
-               </div>
+            <div class="legality-notice">
+               <p>Aviso legal e politica</p>
+               <p>Lorem</p>
+               <p>ipsum</p>
+               <p>at</p>
+               <p>dolor</p>
+               <p>sit</p>
+               
             </div>
-            <div class="bottom-footer-content">
-               <div class="footer-logo">"LOGO" &copy; 2023 Todos os direitos reservados</div>
-                  <div class="buttons-container">
-                  <a>
-                     Reportar erro
-                  </a>
-                  <a>
-                     Anuncie conosco
-                  </a>
-                  </div>
+            <div class="terms-of-use">
+               <p>Termos de uso</p>
+               <p>Lorem</p>
+               <p>ipsum</p>
+               <p>at</p>
+               <p>dolor</p>
+               <p>sit</p>
+               
+            </div>
+            <div class="enter-group">
+               <p>Faça parte da equipe</p>
+               <p>Lorem</p>
+               <p>ipsum</p>
+               <p>at</p>
+               <p>dolor</p>
+               <p>sit</p>
+               
             </div>
          </div>
+         <div class="bottom-footer-content">
+            <div class="footer-logo">"LOGO" &copy; 2023 Todos os direitos reservados</div>
+               <div class="buttons-container">
+               <a>
+                  Reportar erro
+               </a>
+               <a>
+                  Anuncie conosco
+               </a>
+               </div>
+         </div>
+         
       </footer>
-
-
-
 
       <script src="../scripts/handlerMenu.js"></script>
       <script src="../scripts/newsletterPop.js"></script>

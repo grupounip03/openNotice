@@ -106,3 +106,136 @@ div.ebook-container {
   height: calc(80vh - 12px);
   border: 1px solid #ccc;
 }
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav > div.login-pop-up > div > div > input {
+  width: 60%;
+  border-radius: 0.275rem;
+  border: 1.5px solid var(--primary-color);
+  padding: 10px;
+  background-color: #ccc;
+  padding-left: 32px;
+}
+
+nav > div.login-pop-up > div > div > .mail-icon {
+  position: absolute;
+  transform: translateX(10px) translateY(10px);
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > button {
+  width: 65%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 0.275rem;
+  border: 1.5px solid var(--primary-color);
+  background-color: #ccc;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > button:hover {
+  cursor: pointer;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content
+  > .mail-icon {
+  position: absolute;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content
+  > input#input-email {
+  width: 60%;
+  border-radius: 0.275rem;
+  border: 1.5px solid var(--primary-color);
+  padding: 10px;
+  background-color: #ccc;
+  padding-left: 32px;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content
+  > button:hover {
+  cursor: pointer;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content
+  > button {
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content
+  > p {
+  height: auto;
+  font-size: 152%;
+  margin-top: 50px;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
+  > div.newsletter-container
+  > div.newsletter-content
+  > h2 {
+  letter-spacing: 2pt;
+}
