@@ -10,7 +10,7 @@
   background-color: #111111;
 }
 
-.footer-wrapper > div.footer-logo > p.footer-logo-content {
+.footer-wrapper > .footer-logo > p.footer-logo-content {
   color: #fff;
   font-family: "Roboto";
   font-weight: 700;
@@ -18,12 +18,12 @@
   text-align: center;
 }
 
-.footer-wrapper > div.top-footer-content {
+.footer-wrapper > .top-footer-content {
   width: 100%;
   height: 24vh;
 }
 
-.footer-wrapper > div.bottom-footer-content {
+.footer-wrapper > .bottom-footer-content {
   width: 100%;
   height: 8vh;
   border-bottom: 0px;
@@ -34,37 +34,34 @@
   padding: 0 10px 0 10px;
 }
 
-.footer-wrapper
-  > div.bottom-footer-content
-  > div.buttons-container
-  > a:first-child {
+.footer-wrapper > .bottom-footer-content > .buttons-container > a:first-child {
   margin-right: 16px;
 }
 
-.footer-wrapper > div.bottom-footer-content > div.buttons-container > a:hover {
+.footer-wrapper > .bottom-footer-content > .buttons-container > a:hover {
   padding-bottom: 6px;
   cursor: pointer;
   border-bottom: 1px solid #888;
 }
 
-.footer-wrapper > div.top-footer-content {
+.footer-wrapper > .top-footer-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.footer-wrapper > div.top-footer-content > div {
+.footer-wrapper > .top-footer-content > div {
   width: 25%;
   height: 100%;
   margin: 30px;
 }
 
-.footer-wrapper > div.top-footer-content > div > p:first-child {
+.footer-wrapper > .top-footer-content > div > p:first-child {
   font-size: 14pt;
   font-weight: 700;
 }
 
-.footer-wrapper > div.footer-logo > img {
+.footer-wrapper > .footer-logo > img {
   max-width: 100%;
   height: auto;
 }
