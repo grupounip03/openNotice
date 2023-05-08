@@ -26,6 +26,12 @@ div.bottom-line {
   height: fit-content;
 }
 
+#main-article > div.left-content-economy {
+  width: 70%;
+  height: fit-content;
+  margin-left: 180.406px;
+}
+
 #main-article > div.right-content {
   width: 30%;
   display: flex;

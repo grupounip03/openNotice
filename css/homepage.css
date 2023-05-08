@@ -45,4 +45,14 @@ div.main-bottom-container > div.ad-container {
   border: 1px solid #ccc;
 }
 
+div.main-bottom-container > div.ad-container-economy {
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align:center;
+}
+
 /* Carrousel */
