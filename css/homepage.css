@@ -59,4 +59,23 @@ div.main-bottom-container > div.ad-container-economy {
   text-align: center;
 }
 
-/* Carrousel */
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.left-content-economy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-content-economy > p {
+  width: 70%;
+  height: auto;
+  font-size: 16px;
+  letter-spacing: 1pt;
+}
