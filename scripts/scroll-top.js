@@ -1,5 +1,5 @@
 const dataAnima = document.querySelector('[dataAnima="scroll"]');
-const metadeWindow = window.innerHeight * 3.2;
+const metadeWindow = window.innerHeight * 4.8;
 const btnVoltarTopo = dataAnima.querySelector('.top');
 
 function animaScroll() {
