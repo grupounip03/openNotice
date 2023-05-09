@@ -1,62 +1,84 @@
 var popUpState = false;
 var isBlocking = false;
 
-document
-   .querySelector('.btn-login-newsletter')
-   .addEventListener('click', () => {
+var btnLoginNewsletter = document.querySelector('.btn-login-newsletter');
+if (btnLoginNewsletter) {
+   btnLoginNewsletter.addEventListener('click', () => {
       isBlocking = true;
       setTimeout(() => {
          isBlocking = false;
       }, 1500);
    });
+}
 
-document.querySelector('#checkbox-newsletter').addEventListener('blur', () => {
-   if (popUpState == true && !isBlocking) {
-      popUpState = false;
-      document.querySelector('.login-pop-up').classList.remove('open-popup');
-   }
-});
-
-document
-   .querySelector('.btn-login-newsletter')
-   .addEventListener('click', () => {
-      if (popUpState == false) {
-         popUpState = true;
-         document.querySelector('.login-pop-up').classList.add('open-popup');
-         document.querySelector('#checkbox-newsletter').focus();
-      } else {
+var checkboxNewsletter = document.querySelector('#checkbox-newsletter');
+if (checkboxNewsletter) {
+   checkboxNewsletter.addEventListener('blur', () => {
+      if (popUpState == true && !isBlocking) {
          popUpState = false;
-         document.querySelector('.login-pop-up').classList.remove('open-popup');
-         document.querySelector('#checkbox-newsletter').blur();
+         var loginPopUp = document.querySelector('.login-pop-up');
+         if (loginPopUp) {
+            loginPopUp.classList.remove('open-popup');
+         }
+      }
+   });
+}
+
+if (btnLoginNewsletter) {
+   btnLoginNewsletter.addEventListener('click', () => {
+      var loginPopUp = document.querySelector('.login-pop-up');
+      if (loginPopUp) {
+         if (popUpState == false) {
+            popUpState = true;
+            loginPopUp.classList.add('open-popup');
+            var checkboxNewsletter = document.querySelector('#checkbox-newsletter');
+            if (checkboxNewsletter) {
+               checkboxNewsletter.focus();
+            }
+         } else {
+            popUpState = false;
+            loginPopUp.classList.remove('open-popup');
+            var checkboxNewsletter = document.querySelector('#checkbox-newsletter');
+            if (checkboxNewsletter) {
+               checkboxNewsletter.blur();
+            }
+         }
+      }
+   });
+}
+
+var specialElements = document.querySelectorAll('.special');
+if (specialElements) {
+   Array.from(specialElements).forEach(item => {
+      item.addEventListener('click', () => {
+         isBlocking = true;
+         setTimeout(() => {
+            isBlocking = false;
+         }, 1500);
+      });
+   });
+}
+
+var inputElement = document.querySelector('.input');
+if (inputElement) {
+   let placeholderState = false;
+   inputElement.addEventListener('focus', function () {
+      if (placeholderState == false) {
+         placeholderState = true;
+         inputElement.placeholder = '';
+      } else {
+         placeholderState = false;
+         inputElement.placeholder = 'Buscar';
       }
    });
 
-Array.from(document.querySelectorAll('.special')).forEach(item => {
-   item.addEventListener('click', () => {
-      isBlocking = true;
-      setTimeout(() => {
-         isBlocking = false;
-      }, 1500);
+   inputElement.addEventListener('blur', function () {
+      if (placeholderState == false) {
+         placeholderState = true;
+         inputElement.placeholder = '';
+      } else {
+         placeholderState = false;
+         inputElement.placeholder = 'Buscar';
+      }
    });
-});
-
-let placeholderState = false;
-document.querySelector('.input').addEventListener('focus', function () {
-   if (placeholderState == false) {
-      placeholderState = true;
-      document.querySelector('.input').placeholder = '';
-   } else {
-      placeholderState = false;
-      document.querySelector('.input').placeholder = 'Buscar';
-   }
-});
-
-document.querySelector('.input').addEventListener('blur', function () {
-   if (placeholderState == false) {
-      placeholderState = true;
-      document.querySelector('.input').placeholder = '';
-   } else {
-      placeholderState = false;
-      document.querySelector('.input').placeholder = 'Buscar';
-   }
-});
+}
