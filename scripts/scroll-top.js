@@ -17,7 +17,7 @@ function animaScroll() {
 
 function voltaAoTopo(event) {
   event.preventDefault(); 
-  window.scrollTo({
+  window.scrollTo ({
     top: 0,
     behavior: 'smooth' 
   });
