@@ -5,20 +5,19 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Open Notice</title>
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <link rel="icon" href="../images/icon-op-aba.svg">
       
-      <link
-         rel="stylesheet"
-         href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
-         type="text/css"
-      />
+      <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
 
-      <link rel="stylesheet" href="./navBar.css" />
-      <link rel="stylesheet" href="./lastPost.css" />
-      <link rel="stylesheet" href="./homepage.css" />
-      <link rel="stylesheet" href="./footer.css" />
-      <link rel="stylesheet" href="./article.css" />
-      <link rel="stylesheet" href="./global.css" />
+      <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="stylesheet" href="../css/navBar.css" />
+      <link rel="stylesheet" href="../css/lastPost.css" />
+      <link rel="stylesheet" href="../css/homepage.css" />
+      <link rel="stylesheet" href="../css/footer.css" />
+      <link rel="stylesheet" href="../css/article.css" />
+      <link rel="stylesheet" href="../css/global.css" />
 
    </head>
    <body>
@@ -46,7 +45,7 @@
                </div>
                <div class="logo">
                   <a href="" id="logo">
-                     <img src="./logo.png" alt="">
+                     <img src="../images/logo.png" alt="">
                   </a>
                </div>
                
@@ -84,7 +83,7 @@
       <section id="home">
          <div class="right-main-top-container">
             <a href="index.html">
-               <img src="./banco-central.png">
+               <img src="../images/banco-central.png">
             </a>
          </div>
          
@@ -157,10 +156,11 @@
                      </div>
                   </div>
                   <div class="ebook-container">
-                     ebook
+                     <img src="" alt="">
                   </div>
                   <div class="psycho-log">
-                     psycho log
+                     <button class="sensivity-content">
+                        <i class="fa fa-eye"></i>Show
                   </div>
                </aside>
             </div>
@@ -170,7 +170,7 @@
       <footer class="footer-wrapper">
          
          <div class="footer-logo">
-            <img src="./logo.png" class="footer-logo-content"></img>
+            <img src="../images/logo.png" class="footer-logo-content"></img>
          </div>
          <div class="top-footer-content">
             <div class="about-us">
@@ -195,7 +195,7 @@
             </div>
          </div>
          <div class="bottom-footer-content">
-            <div class="footer-logo">"LOGO" &copy; 2023 Todos os direitos reservados</div>
+            <div class="footer-logo">"OPenNotice" &copy; 2023 Todos os direitos reservados</div>
                <div class="buttons-container">
                <a>
                   Reportar erro
@@ -205,10 +205,19 @@
                </a>
                </div>
          </div>
-         
+         <div dataScroll="slow" dataAnima="scroll">
+            <a href="#nav-wrapper">
+               <div class="top">
+                  <img src="../images/arrow-up.svg" alt="Voltar ao topo">
+      
+               </div>
+            </a>
+
+         </div>
       </footer>
 
       <script src="../scripts/handlerMenu.js"></script>
       <script src="../scripts/newsletterPop.js"></script>
+      <script src="../scripts/scroll-top.js"></script>
    </body>
 </html>
