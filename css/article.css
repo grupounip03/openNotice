@@ -3,10 +3,11 @@
   height: fit-content;
   position: relative;
   display: flex;
+  margin-bottom: 24px;
 }
 
 div.top-line {
-  width: 63vw;
+  max-width: 63vw;
   height: 3px;
   background-color: #111111;
   transform: translate(5.5%);
@@ -14,7 +15,7 @@ div.top-line {
 }
 
 div.bottom-line {
-  width: 63vw;
+  max-width: 63vw;
   height: 1px;
   background-color: #ccc;
   transform: translate(5.5%);
@@ -26,6 +27,12 @@ div.bottom-line {
   height: fit-content;
 }
 
+#main-article > div.left-content-economy {
+  width: 70%;
+  height: fit-content;
+  margin-left: 180.406px;
+}
+
 #main-article > div.right-content {
   width: 30%;
   display: flex;
@@ -33,12 +40,13 @@ div.bottom-line {
 }
 
 div.left-content > section {
-  width: 100%;
-  height: 45vh;
+  max-width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   margin-left: 35px;
   margin-top: 10px;
+  padding: 12px;
 }
 
 div.left-content > section > h1 {
@@ -52,20 +60,18 @@ div.left-content
   > div.image-section-container
   > p {
   margin-top: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
-div.left-content
-  > section
-  > div.first-content-section
-  > div.image-section-container
-  > img {
+div.image-section-container > a > img {
   width: 24vw;
   height: 13.5vw;
 }
 
 div.left-content > section > div.first-content-section {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   display: flex;
 }
 
@@ -79,6 +85,15 @@ div.left-content
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.left-content
+  > section
+  > .first-content-section
+  > .image-section-container
+  > h1 {
+  height: auto;
+  max-width: 80%;
 }
 
 #main-article > div.right-content > div.right-wrapper {
@@ -98,12 +113,6 @@ div.ebook-container {
   height: 40vh;
   margin-bottom: calc(5vh + 12px);
   margin-top: calc(5vh + 12px);
-  border: 1px solid #ccc;
-}
-
-#main-article > div.right-content > div.right-wrapper > aside > div.psycho-log {
-  width: 80%;
-  height: calc(80vh - 12px);
   border: 1px solid #ccc;
 }
 
@@ -159,6 +168,15 @@ nav > div.login-pop-up > div > div > .mail-icon {
   > div.right-content
   > div.right-wrapper
   > aside
+  > div.newsletter-container {
+  max-width: 100%;
+  height: auto;
+}
+
+#main-article
+  > div.right-content
+  > div.right-wrapper
+  > aside
   > div.newsletter-container
   > div.newsletter-content {
   width: 100%;
@@ -193,6 +211,7 @@ nav > div.login-pop-up > div > div > .mail-icon {
   padding: 10px;
   background-color: #ccc;
   padding-left: 32px;
+  margin-top: 32px;
 }
 
 #main-article
@@ -216,6 +235,7 @@ nav > div.login-pop-up > div > div > .mail-icon {
   height: auto;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 32px;
 }
 
 #main-article
@@ -238,4 +258,37 @@ nav > div.login-pop-up > div > div > .mail-icon {
   > div.newsletter-content
   > h2 {
   letter-spacing: 2pt;
+  margin-top: 32px;
+  max-width: 100%;
+  height: auto;
+}
+
+#main-article > .right-content > .right-wrapper > aside > .psycho-log {
+  max-width: 80%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-article > .right-content > .right-wrapper > aside > .psycho-log > button {
+  padding: 8px 22px 8px 22px;
+  border: 1px solid #ccc;
+  border-radius: 0.275rem;
+  display: flex;
+  align-items: center;
+  gap: 0.275rem;
+  transition-duration: 200ms;
+}
+
+#main-article
+  > .right-content
+  > .right-wrapper
+  > aside
+  > .psycho-log
+  > button:hover {
+  cursor: pointer;
+  background-color: #cccccc;
 }

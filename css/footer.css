@@ -1,6 +1,6 @@
 .footer-wrapper {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
 
 .footer-wrapper > .top-footer-content {
   width: 100%;
-  height: 24vh;
+  height: auto;
 }
 
 .footer-wrapper > .bottom-footer-content {

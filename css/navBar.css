@@ -5,8 +5,8 @@ nav {
   position: sticky;
   z-index: 10;
   top: 0;
-  width: 100vw;
-  height: 9vh;
+  width: 100%;
+  height: auto;
   background-color: var(--primary-color);
 }
 
