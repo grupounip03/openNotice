@@ -6,7 +6,33 @@ section#home {
   margin-bottom: 150px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 10px;
+}
+
+.email-pop-up-close-button {
+  position: absolute;
+}
+
+.pop-up-email {
+  width: 420px;
+  height: 420px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  display: none;
+}
+
+.open-email {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  transform: translateY(20%);
+}
+
+.close-email {
+  display: none;
 }
 
 div.right-main-top-container {

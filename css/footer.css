@@ -12,7 +12,7 @@
 
 .footer-wrapper > .footer-logo > p.footer-logo-content {
   color: #fff;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 38px;
   text-align: center;
@@ -48,17 +48,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 24px;
 }
 
 .footer-wrapper > .top-footer-content > div {
   width: 25%;
   height: 100%;
   margin: 30px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer-wrapper > .top-footer-content > div > p:first-child {
   font-size: 14pt;
   font-weight: 700;
+  position: absolute;
+}
+
+.footer-wrapper > .top-footer-content > div > p:first-child:hover {
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #888;
 }
 
 .footer-wrapper > .footer-logo > img {

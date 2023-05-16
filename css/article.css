@@ -194,16 +194,7 @@ nav > div.login-pop-up > div > div > .mail-icon {
   > aside
   > div.newsletter-container
   > div.newsletter-content
-  > .mail-icon {
-  position: absolute;
-}
-
-#main-article
-  > div.right-content
-  > div.right-wrapper
-  > aside
-  > div.newsletter-container
-  > div.newsletter-content
+  > form
   > input#input-email {
   width: 60%;
   border-radius: 0.275rem;
@@ -220,6 +211,7 @@ nav > div.login-pop-up > div > div > .mail-icon {
   > aside
   > div.newsletter-container
   > div.newsletter-content
+  > form
   > button:hover {
   cursor: pointer;
 }
@@ -230,6 +222,7 @@ nav > div.login-pop-up > div > div > .mail-icon {
   > aside
   > div.newsletter-container
   > div.newsletter-content
+  > form
   > button {
   width: 50%;
   height: auto;
