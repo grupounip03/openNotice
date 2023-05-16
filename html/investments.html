@@ -81,6 +81,9 @@
       </div>
       
       <section id="home">
+         <div class="pop-up-email">
+            <button class="email-pop-up-close-button">X</button>
+         </div>
          <div class="right-main-top-container">
             <a href="index.html">
                <img src="../images/investimentos.png">
@@ -142,18 +145,16 @@
                            Assine nossa newsletter e receba em <br>
                            primeira mão conteúdos exclusivos 
                         </p>
-                       
-                        <input type="email" placeholder="Email" name="email" id="input-email" />
-                        <button class="submit" type="submit">Inscrever-se (Grátis)</button>
+                        <form id="some-form">
+                           <input type="email" placeholder="Email" name="email" id="input-email" value="email"/>
+                           <button class="email-submit" type="submit">Inscrever-se (Grátis)</button>
+                        </form>
                      </div>
                   </div>
                   <div class="ebook-container">
                      <img src="" alt="">
                   </div>
-                  <div class="psycho-log">
-                     <button class="sensivity-content">
-                        <i class="fa fa-eye"></i>Show
-                  </div>
+                  
                </aside>
             </div>
          </div>
@@ -211,5 +212,6 @@
       <script src="../scripts/handlerMenu.js"></script>
       <script src="../scripts/newsletterPop.js"></script>
       <script src="../scripts/scroll-top.js"></script>
+      <script src="../scripts/form.js"></script>
    </body>
 </html>

@@ -67,10 +67,13 @@ div.logo-menu > a {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: auto;
+  height: 100%;
+  margin-right: 52px;
 }
 
 .switch-search > input::placeholder {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 300;
   font-size: 16px;
 }
@@ -116,7 +119,7 @@ div.logo-menu > div > button.hamburguer-menu:hover {
 }
 
 div.logo-menu > div > button.hamburguer-menu > span {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-size: 24px;
   font-weight: 300;
   padding-left: 12px;
@@ -142,7 +145,8 @@ div.navbar {
 }
 
 ul {
-  margin-top: 13px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 li {
@@ -151,7 +155,7 @@ li {
   padding-right: 10px;
   margin-top: 13px;
 
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
 }
 
 li > a {
@@ -160,7 +164,7 @@ li > a {
 
 div.logo > a#logo > p {
   color: #111111;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 38px;
 }
