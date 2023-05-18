@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Open Notice</title>
+      <link rel="icon" href="../images/icon-op-aba.svg">
+      
+      <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+
+      <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="stylesheet" href="../css/navBar.css" />
+      <link rel="stylesheet" href="../css/lastPost.css" />
+      <link rel="stylesheet" href="../css/homepage.css" />
+      <link rel="stylesheet" href="../css/footer.css" />
+      <link rel="stylesheet" href="../css/article.css" />
+      <link rel="stylesheet" href="../css/global.css" />
+
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <div class="logo-menu">
+               <div>
+                  <button class="hamburguer-menu">
+                     <svg
+                        width="35"
+                        height="35"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="butt"
+                        stroke-linejoin="arcs"
+                     >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                     </svg>
+                     <span>MENU</span>
+                  </button>
+               </div>
+               <div class="logo">
+                  <a href="../html/index.html" id="logo">
+                    <img src="../images/logo.png" alt="">
+                  </a>
+               </div>
+               
+               <div class="switch-search">
+                  <button class="search-icon"><ion-icon name="search"></ion-icon></button>
+                  <input class="input" type="text" placeholder="Buscar" required>
+               </div>
+         </div>
+      </nav>
+      
+      <div class="navbar">
+         <ul>
+            <li onclick="close()">
+               <a onclick="close()" href="./index.html#last-post"> Últimas notícias </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="./index.html#global-economy"> Economia Global </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="./index.html#health"> Saúde e Bem-Estar </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="./index.html#sports"> Esportes </a>
+            </li>
+
+            <li onclick="close()">
+               <a onclick="close()" href="./index.html#private-equity"> Investimentos </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href=""> Newsletter </a>
+            </li>
+         </ul>
+      </div>
+      
+      <section id="home">
+         <div class="right-main-top-container">
+            <a href="index.html">
+               <img class="img-with-shadows" src="../images/ultimasnoticias2.png">
+            </a>
+         </div>
+         
+         
+         <div class="title-secondary-pages-h1">
+            
+            <h2>Com altas temperaturas no interior de SP, fábrica investe na produção de gelo</h2>
+            <p>Empresa do Oeste paulista fatura cerca de R$ 1,5 milhão ao ano.</p>
+            
+         </div>
+      </section>
+
+      <article id="main-article">
+         <div class="left-content-economy">
+          <p class="paragraph-secondary-pages margin-bottom-secondary-pages">
+            Para diminuir o calor dos 200 mil habitantes de Araçatuba, no Oeste paulista, só montando uma fábrica de gelo. Essa foi a ideia do pai e do tio do empresário Alberto Nilton Vitro nos anos 1990.
+            <br><br>
+            A capacidade de produção da fábrica é de 10 toneladas de gelo por dia. E fazer gelo tem suas regulamentações, como usar água bifiltrada e fazer análises mensalmente.
+            <br><br>
+            Também é necessário o certificado da Companhia Ambiental do Estado de São Paulo (Cetesb), além de ter liberação da Polícia Federal para trabalhar, porque envolve o gás de amônia na fabricação. Tudo isso é para dar segurança para o consumidor.
+            <br><br>
+            Para quem planeja montar uma fábrica de gelo, é importante antes verificar quais são as exigências de cada cidade e estado.
+            <br><br>
+            A fábrica do Nilton fornece gelo para lojas de conveniência, postos de gasolina, supermercados e pequenas distribuidoras de bebidas. Ele comemora os bons resultados do pequeno negócio da família. A empresa fatura cerca de R$ 1,5 milhão ao ano.
+
+          </p>
+         </div>
+         <div class="right-content">
+            <div class="right-wrapper">
+               <aside>
+                  <div class="newsletter-container">
+                     <div class="newsletter-content">
+                        <h2>Newsletter</h2>
+                        <p>
+                           Assine nossa newsletter e receba em <br>
+                           primeira mão conteúdos exclusivos 
+                        </p>
+                       
+                        <input type="email" placeholder="Email" name="email" id="input-email" />
+                        <button class="submit" type="submit">Inscrever-se (Grátis)</button>
+                     </div>
+                  </div>
+               </aside>
+            </div>
+         </div>
+      </article>
+
+      <footer class="footer-wrapper">
+         
+         <div class="footer-logo">
+            <img src="../images/logo.png" class="footer-logo-content"></img>
+         </div>
+         <div class="top-footer-content">
+            <div class="about-us">
+               
+
+               
+            </div>
+            <div class="legality-notice">
+               
+
+               
+            </div>
+            <div class="terms-of-use">
+               
+
+               
+            </div>
+            <div class="enter-group">
+               
+
+               
+            </div>
+         </div>
+         <div class="bottom-footer-content">
+            <div class="footer-logo">"OPenNotice" &copy; 2023 Todos os direitos reservados</div>
+               <div class="buttons-container">
+               <a href="#" style="text-transform: uppercase; font-size: 0.9rem; color: white;">
+                  Reportar erro
+               </a>
+               <a href="#" style="text-transform: uppercase; font-size: 0.9rem; color: white;">
+                  Anuncie conosco
+               </a>
+               </div>
+         </div>
+         <div dataScroll="slow" dataAnima="scroll">
+            <a href="#nav-wrapper">
+               <div class="top">
+                  <img src="../images/arrow-up.svg" alt="Voltar ao topo">
+      
+               </div>
+            </a>
+
+         </div>
+      </footer>
+
+      <script src="../scripts/handlerMenu.js"></script>
+      <script src="../scripts/newsletterPop.js"></script>
+      <script src="../scripts/scroll-top.js"></script>
+   </body>
+</html>
