@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Open Notice</title>
+      <link rel="icon" href="../images/icon-op-aba.svg">
+      
+      <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+
+      <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="stylesheet" href="../css/navBar.css" />
+      <link rel="stylesheet" href="../css/lastPost.css" />
+      <link rel="stylesheet" href="../css/homepage.css" />
+      <link rel="stylesheet" href="../css/footer.css" />
+      <link rel="stylesheet" href="../css/article.css" />
+      <link rel="stylesheet" href="../css/global.css" />
+      <link rel="stylesheet" href="../css/image.css">
+      <link rel="stylesheet" href="../css/psycholog.css">
+      <link rel="stylesheet" href="../css/carousel.css">
+
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <div class="logo-menu">
+               <div>
+                  <button class="hamburguer-menu">
+                     <svg
+                        width="35"
+                        height="35"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        stroke-linecap="butt"
+                        stroke-linejoin="arcs"
+                     >
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                     </svg>
+                     <span>MENU</span>
+                  </button>
+               </div>
+               <div class="logo">
+                  <a href="../html/index.html" id="logo">
+                    <img src="../images/logo.png" alt="">
+                  </a>
+                </div>
+                  </a>
+               </div>
+               
+               <div class="switch-search">
+                  <button class="search-icon"><ion-icon name="search"></ion-icon></button>
+                  <input class="input" type="text" placeholder="Buscar" required>
+               </div>
+         </div>
+      </nav>
+      
+      <div class="navbar">
+         <ul>
+            <li onclick="close()">
+               <a onclick="close()" href="#last-post"> Ùltimas notícias </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="#global-economy"> Economia Global </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="#health"> Saúde e Bem-Estar </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href="#sports"> Esportes </a>
+            </li>
+
+            <li onclick="close()">
+               <a onclick="close()" href="#private-equity"> Investimentos </a>
+            </li>
+            <li onclick="close()">
+               <a onclick="close()" href=""> Newsletter </a>
+            </li>
+         </ul>
+      </div>
+      
+      <section id="home">
+         <div class="right-main-top-container">
+            
+            <div class="carousel-container">
+               <div class="carousel-slides">
+                  <div class="carousel-slide">
+                  <a href="economy.html">
+                     <img class="carousel-image" src="../images/banco-central.png" alt="Image 1">
+                     <div class="carousel-caption">Banco Central aliviam mas não colocaram <br> corte de juro no radar</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="lastpost.html">
+                     <img class="carousel-image" src="../images/ultimasnoticias1.png" alt="Image 2">
+                     <div class="carousel-caption">Com altas temperaturas no interior de SP, fábrica investe na produção de gelo</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="economy2.html">
+                     <img class="carousel-image" src="../images/ecomomia-global1.png" alt="Image 3">
+                     <div class="carousel-caption">BC diz que “não hesitará” em subir juros se inflação não baixar como esperado; veja íntegra</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="health.html">
+                     <img class="carousel-image" src="../images/saude1.png" alt="Image 4">
+                     <div class="carousel-caption">Piracicaba registra primeira morte por dengue em 2023</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="health2.html">
+                     <img class="carousel-image" src="../images/saude2.png" alt="Image 4">
+                     <div class="carousel-caption">Austrália anuncia novas regras para coibir uso de cigarros eletrônicos entre adolescentes</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="investments.html">
+                     <img class="carousel-image" src="../images/investimentos.png" alt="Image 4">
+                     <div class="carousel-caption">O Mesmo com prejuízo, fundos dos EUA vendem ações da Americanas</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="sports.html">
+                     <img class="carousel-image" src="../images/esportes.png" alt="Image 4">
+                     <div class="carousel-caption">CCJ aprova projeto do Governo de incentivo ao esporte; bolsa atleta a partir de R$ 1 mil</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="investments2.html">
+                     <img class="carousel-image" src="../images/investimentos2.png" alt="Image 4">
+                     <div class="carousel-caption">Ativos ESG caem US$ 163,2 bilhões no mundo no 1º tri, aponta instituto</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="sports2.html">
+                     <img class="carousel-image" src="../images/esportes2.png" alt="Image 4">
+                     <div class="carousel-caption">Projeto de esporte vinculado ao Cidade Integrada é paralisado por falta de pagamento a professores</div>
+                  </a>
+                  </div>
+                  <div class="carousel-slide">
+                  <a href="lastpost2.html">
+                     <img class="carousel-image" src="../images/ultimasnoticias2.png" alt="Image 4">
+                     <div class="carousel-caption">Empreendedora cria cafeteria onde os clientes podem brincar e adotar gatos</div>
+                  </a>
+                  </div>
+               </div>
+               <div class="carousel-prev">&#10094;</div>
+               <div class="carousel-next">&#10095;</div>
+            </div>
+            <!--<a href="">
+               <img style="width: 10000px;" src="../images/banco-central.png" >
+            </a>-->
+         </div>          
+      </section>
+
+      <article id="main-article">
+         <div class="left-content">
+            <section id="last-post">
+               <div class="top-line" ></div>
+               <h1 class="title-news">Últimos <span>posts</span></h1>
+               <div class="bottom-line"></div>
+               <div class="first-content-section">
+                  <div class="image-section-container zoom-effect">                  
+                     <a href="../html/lastpost.html">
+                        <img style="border-radius: 6px;" src="../images/ultimasnoticias1.png" alt="">
+                     </a>
+                     <h1>Com altas temperaturas no interior de SP, fábrica investe na produção de gelo</h1>
+                  </div>
+                  <div class="image-section-container zoom-effect">
+                     <a href="../html/lastpost2.html">
+                        <img style="border-radius: 6px;" src="../images/ultimasnoticias2.png" alt="">
+                     </a>
+                     <h1>Empreendedora cria cafeteria onde os clientes podem brincar e adotar gatos</h1>
+                  </div>
+               </div>
+            </section>
+
+            <section id="global-economy">
+               <div class="top-line" ></div>
+               <h1 class="title-news">Economia <span>global</span></h1>
+               <div class="bottom-line"></div>
+               <div class="first-content-section">
+                  <div class="image-section-container zoom-effect">                     
+                     <a href="./economy.html">
+                        <img style="border-radius: 6px;" src="../images/banco-central.png" alt="">  
+                     </a>
+                     <h1>Banco Central aliviam mas não colocaram corte de juro no radar</h1>
+                  </div>
+                  <div class="image-section-container zoom-effect">
+                     <a href="./economy2.html">
+                        <img style="border-radius: 6px;" src="../images/ecomomia-global1.png" alt="">
+                     </a>
+                     <h1>BC diz que “não hesitará” em subir juros se inflação não baixar como esperado; veja íntegra</h1>
+                  </div>
+               </div>
+            </section>
+
+            <section id="health">
+               <div class="top-line" ></div>
+               <h1 class="title-news">Saúde <span>e bem estar</span></h1>
+               <div class="bottom-line"></div>
+               <div class="first-content-section">
+                  <div class="image-section-container zoom-effect">
+                     <a href="../html/health.html">
+                        <img style="border-radius: 6px;" src="../images/mosquito.webp" alt="">
+                     </a>
+                     <h1>Piracicaba registra primeira morte por dengue em 2023</h1>
+                  </div>
+                  <div class="image-section-container zoom-effect">
+                     <a href="../html/health2.html">
+                        <img style="border-radius: 6px;" src="../images/saude2.png" alt="">
+                     </a>
+                     <h1>Austrália anuncia novas regras para coibir uso de cigarros eletrônicos entre adolescentes</h1>
+                  </div>
+               </div>
+            </section>
+
+            <section id="sports">
+               <div class="top-line" ></div>
+               <h1 class="title-news">Esportes</h1>
+               <div class="bottom-line"></div>
+               <div class="first-content-section">
+                  <div class="image-section-container zoom-effect">                     
+                     <a href="../html/sports.html">
+                        <img style="border-radius: 6px;" src="../images/esportes.png" alt="">
+                     </a>
+                     <h1>CCJ aprova projeto do Governo de incentivo ao esporte; bolsa atleta a partir de R$ 1 mil</h1>
+                  </div>
+                  <div class="image-section-container zoom-effect">
+                     <a href="../html/sports2.html">
+                        <img style="border-radius: 7px;" src="../images//esportes2.png" alt="">
+                     </a>
+                     <h1>Projeto de esporte vinculado ao Cidade Integrada é paralisado por falta de pagamento a professores</>
+                  </div>
+               </div>
+            </section>
+
+            <section id="private-equity">
+               <div class="top-line" ></div>
+               <h1 class="title-news">Investimentos <span></span></h1>
+               <div class="bottom-line"></div>               
+               <div class="first-content-section">
+                  <div class="image-section-container zoom-effect">                  
+                     <a href="../html/investments.html">
+                        <img style="border-radius: 6px;" src="../images/investimentos.png" alt="">
+                     </a>
+                     <h1>O Mesmo com prejuízo, fundos dos EUA vendem ações da Americanas</h1>
+                  </div>
+                  <div class="image-section-container zoom-effect">
+                     <a href="../html/investments2.html">
+                        <img style="border-radius: 6px;" src="../images/investimentos2.png" alt="">
+                     </a>
+                     <h1>Ativos ESG caem US$ 163,2 bilhões no mundo no 1º tri, aponta instituto</h1>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="right-content">
+            <div class="right-wrapper">
+               <aside>
+                  <div class="newsletter-container">
+                     <div class="newsletter-content">
+                        <h2>Newsletter</h2>
+                        <p>
+                           Assine nossa newsletter e receba em <br>
+                           primeira mão conteúdos exclusivos 
+                        </p>
+                       
+                        <input type="email" placeholder="Email" name="email" id="input-email" />
+                        <button class="submit" type="submit">Inscrever-se (Grátis)</button>
+                     </div>
+                  </div>             
+               </aside>
+            </div>
+         </div>
+      </article>
+
+      <footer class="footer-wrapper">
+         
+         <div class="footer-logo">
+            <img src="../images/logo.png" class="footer-logo-content"></img>
+         </div>
+         <div class="top-footer-content">
+            <div class="about-us">
+               
+               
+            </div>
+            <div class="legality-notice">
+               
+
+            </div>
+            <div class="terms-of-use">
+               
+               
+            </div>
+            <div class="enter-group">
+               
+               
+            </div>
+         </div>
+         <div class="bottom-footer-content">
+            <div class="footer-logo">"OPenNotice" &copy; 2023 Todos os direitos reservados</div>
+               <div class="buttons-container">
+               <a href="#" style="text-transform: uppercase; font-size: 0.9rem; color: white;">
+                  Reportar erro
+               </a>
+               <a href="#" class="footer-link" style="text-transform: uppercase; font-size: 0.9rem; color: white;">
+                   Anuncie conosco
+               </a>
+               </div>
+         </div>
+
+         <div dataScroll="slow" dataAnima="scroll">
+            <a href="#nav-wrapper">
+               <div class="top">
+                  <img src="../images/arrow-up.svg" alt="Voltar ao topo">
+               </div>
+            </a>
+
+         </div>
+         <div class="image-container"></div>
+
+      </footer>
+
+      <script src="../scripts/carousel.js"></script>
+      <script src="../scripts/handlerMenu.js"></script>
+      <script src="../scripts/newsletterPop.js"></script>
+      <script src="../scripts/scroll-top.js"></script>
+      <script src="../scripts/psycholog.js"></script>
+   </body>
+</html>
